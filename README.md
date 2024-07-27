@@ -3,6 +3,9 @@
 A simple static typing website build with Vue 3. 
 I am currently trying to integrate the new version with Python Django. But up till now it is still a static website prototype.
 
+## Screenshot
+<img width="1320" alt="image" src="https://github.com/user-attachments/assets/ce8a7c74-ae4c-4698-b0b8-2fdeded5781d">
+
 ## Usage
 ```sh
 git clone https://github.com/ryanguo13/VueTyping.git
