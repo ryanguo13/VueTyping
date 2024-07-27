@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #DDC7BE; /* Light beige */
+    --secondary-color: #AB8476; /* Warm pink */
+    --accent-color: #F4ECE3; /* Very light beige */
+    --text-color: #4A4A4A; /* Dark gray */
+    --button-background: linear-gradient(135deg, #6e8efb, #a777e3);
+    --button-hover-background: linear-gradient(135deg, #a777e3, #6e8efb);
+    --border-color: #ccc;
+    --correct-color: green;
+    --incorrect-color: red;
+    --cursor-color: black;
+  }
+  
+  body {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-background);
+  }
+  
+  .typing-container {
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .word-count-input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .generate-button {
+    background: var(--button-background);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .generate-button:hover {
+    background: var(--button-hover-background);
+  }
+  
+  .test-text {
+    font-size: 18px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .correct {
+    color: var(--correct-color);
+  }
+  
+  .incorrect {
+    color: var(--incorrect-color);
+  }
+  
+  .cursor {
+    position: absolute;
+    height: 2px;
+    background-color: var(--cursor-color);
+    transition: left 0.05s, top 0.05s;
+  }
+  
+  .hidden-input {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .stats {
+    margin-top: 20px;
+    font-size: 18px;
+  }
